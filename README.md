@@ -7,7 +7,9 @@ Prerequisites
 ==============
 
 1. JDK 1.6 or higher
+2. set the sikuli related dll files to path variable of the system.
 
+(https://raw.githubusercontent.com/uttesh/selenium-flash-testng/master/env_path.png)
 
 Maven Users
 ===========
