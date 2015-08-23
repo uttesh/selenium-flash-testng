@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.rivetsystems.seleniumjunit</groupId>
+    <artifactId>selenium-flash-testng</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>selenium-flash-testng</name>
+    <url>http://maven.apache.org</url>
+   
+    <properties>
+        <junit.version>4.12</junit.version>
+        <testng.version>6.9.6</testng.version>
+        <selenium.java.version>2.47.0</selenium.java.version>
+        <sikuli.core>1.0.0</sikuli.core>
+        <sikuli.api>1.2.0</sikuli.api>
+        <sikuli.webdriver>1.0.1</sikuli.webdriver>
+        <sikuli.script>1.0</sikuli.script>
+        <selenium.firefox.driver>2.47.0</selenium.firefox.driver>
+        <pdfngreport.version>2.0.9</pdfngreport.version>
+    </properties>
+    
+    
+    
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.java.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>${selenium.java.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>14.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-core</artifactId>
+            <version>${sikuli.core}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-api</artifactId>
+            <version>${sikuli.api}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-webdriver</artifactId>
+            <version>${sikuli.webdriver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.sikuli.script</groupId>
+            <artifactId>sikuli-script</artifactId>
+            <version>${sikuli.script}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>${selenium.firefox.driver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.uttesh</groupId>
+            <artifactId>pdfngreport</artifactId>
+            <version>${pdfngreport.version}</version>
+        </dependency>            
+    </dependencies>
+  
+  
+    <build>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                    <version>2.3.2</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.7.2</version>      
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

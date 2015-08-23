@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="selenium-flash-testng">
+
+ <parameter name="pdfngreport-properties" value="pdfngreport.properties" />
+  
+    <listeners>
+        <listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+    </listeners>
+	
+  <test name="WaterLifeTest">
+    <classes>
+      <class name="com.uttesh.seleniumflash.WaterLifeTest" />
+    </classes>
+  </test>
+</suite>
+
